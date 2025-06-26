@@ -74,9 +74,10 @@ main {
 }
 
 .app-image img {
-  max-width: 300px;
-  margin: 20px auto;
-  display: block;
+  /* max-width: 300px; */
+  /* margin: 20px auto; */
+  /* display: block; */
+  margin-left: 200px;
 }
 
 .download-buttons {
@@ -196,6 +197,26 @@ footer .social-media img {
   outline: none;
   box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
 }
+.features-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap; /* para quebrar em telas menores */
+  margin-top: 30px;
+}
+
+.features {
+  max-width: 400px;
+  text-align: left;
+}
+
+.app-image img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
 
 /* Responsivo */
 @media (max-width: 600px) {
@@ -217,4 +238,15 @@ footer .social-media img {
   .features {
     text-align: center;
   }
+  .features-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .features {
+    text-align: center;
+  }
+  .app-image img {
+  margin-left: 0px;
+}
 }
